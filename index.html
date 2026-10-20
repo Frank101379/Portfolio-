@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar">
             <a href="#" class="logo-container">
-                <img src="Profile Photo.jpg" alt="Franklin" class="nav-profile-pic">
+                <img src="Images/Profile Photo.jpg" alt="Franklin" class="nav-profile-pic">
                 <span>Franklin Onuonga Moruri</span>
             </a>
             <ul class="nav-links">
@@ -22,8 +22,11 @@
                 <li><a href="#projects">Projects & Awards</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <!-- Dark Mode Toggle Button -->
-            <button id="theme-toggle" class="theme-btn">🌙</button>
+            <div class="nav-actions">
+                <a href="mailto:franklinonuonga@gmail.com?subject=Requesting%20CV%20-%20Franklin%20Moruri" class="btn-outline">Request CV</a>
+                <!-- Dark/Light Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-btn">🌙</button>
+            </div>
         </nav>
     </header>
 
@@ -31,15 +34,18 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Hi, I'm <span class="highlight">Franklin Onuonga Moruri</span></h1>
-            <p>ICT Specialist & Network Engineer crafting secure IT infrastructure and AI-driven data solutions.</p>
-            <a href="#contact" class="btn">Get In Touch</a>
+            <p>ICT Specialist, Network Engineer & Data Quality Reviewer crafting secure IT infrastructure and validating AI-driven data solutions.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Get In Touch</a>
+                <a href="mailto:franklinonuonga@gmail.com?subject=Requesting%20CV%20-%20Franklin%20Moruri" class="btn-outline">Request CV</a>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section">
         <h2>About Me</h2>
-        <p>Results-driven ICT Specialist with expertise in system administration, network security, and technical support. Skilled in troubleshooting complex IT issues, optimizing system performance, and implementing innovative solutions. Passionate about emerging technologies and committed to delivering reliable and secure IT infrastructure.</p>
+        <p>Results-driven ICT Specialist and Network Engineer with expertise in system administration, network security, and technical support. Experienced in reviewing and annotating datasets for AI/ML training, performing quality assurance, and collaborating with cross-functional remote teams. Skilled in troubleshooting complex IT issues, optimizing system performance, and delivering reliable IT infrastructure. Based in Nairobi, Kenya.</p>
     </section>
 
     <!-- Skills Section -->
@@ -47,16 +53,19 @@
         <h2>Core Skills & Tech Stack</h2>
         <div class="project-grid">
             <div class="project-card">
+                <div class="card-icon"></div>
                 <h3>Networking & Systems</h3>
-                <p>System Management, Network Security, Server Maintenance & Virtualization, OS Administration, ERP & Database Support.</p>
+                <p>System Management, Network Security, Server Maintenance & Virtualization, OS Administration, ERP & Database Support, KIEMS Kit Operations.</p>
             </div>
             <div class="project-card">
+                <div class="card-icon"></div>
                 <h3>Programming Languages</h3>
-                <p>Python, Java, C/C++, SQL, PHP, JavaScript, TypeScript, HTML.</p>
+                <p>Python, Java, C/C++, SQL, PHP, JavaScript, TypeScript, HTML, PyCharm.</p>
             </div>
             <div class="project-card">
-                <h3>Data & AI Training</h3>
-                <p>Data Annotation & Management, AI/ML Training Data Validation, Quality Assurance, Remote Team Collaboration.</p>
+                <div class="card-icon"></div>
+                <h3>Data & AI Quality Assurance</h3>
+                <p>Data Annotation & Management, AI/ML Training Data Validation, Dataset Reviewing, Error Fixing & Quality Assurance, Remote Team Collaboration.</p>
             </div>
         </div>
     </section>
@@ -67,27 +76,27 @@
         <div class="project-grid">
             <div class="project-card">
                 <h3>CloudFactory</h3>
-                <p><strong>Data Specialist (Sept 2026 – Present):</strong> Supporting data annotation and quality workflows.</p>
-            </div>
-            <div class="project-card">
-                <h3>Samasource EPZ Kenya Limited</h3>
-                <p><strong>Associate (Dec 2023 – Sept 2026):</strong> Labeled datasets for AI, provided IT troubleshooting, assisted in project implementation, and wrote/reviewed AI content.</p>
-            </div>
-            <div class="project-card">
-                <h3>Micro1</h3>
-                <p><strong>Senior Data Annotator (April 2025 – August 2025):</strong> Led machine learning data labeling projects and collaborated with remote teams.</p>
+                <p><strong>Data Specialist (Sept 2026 – Present):</strong> Supporting data annotation workflows, maintaining quality assurance standards, and collaborating with distributed teams.</p>
             </div>
             <div class="project-card">
                 <h3>IGEA</h3>
-                <p><strong>Data Labeler (Part-Time):</strong> Underwent specialized training in data labeling.</p>
+                <p><strong>Data Labeler (Part-Time):</strong> Currently undergoing specialized training in data labeling and classification standards.</p>
+            </div>
+            <div class="project-card">
+                <h3>Samasource EPZ Kenya Limited</h3>
+                <p><strong>Associate / Data Annotator & Reviewer (Dec 2023 – Sept 2026):</strong> Labeled and validated complex datasets for AI training. Served as a Data Reviewer checking completed work, fixing errors, and ensuring deliverables met strict client quality standards. Collaborated closely with Team Leaders and Quality Assurance Specialists (QAS).</p>
+            </div>
+            <div class="project-card">
+                <h3>Micro1</h3>
+                <p><strong>Senior Data Annotator (April 2025 – August 2025):</strong> Led machine learning data labeling projects and collaborated with remote distributed teams using Slack and Excel.</p>
             </div>
             <div class="project-card">
                 <h3>IEBC (Kisii)</h3>
-                <p><strong>IT Support Clerk (Sept 2022):</strong> Set up, tested, and troubleshot KIEMS kits and managed voter verification systems.</p>
+                <p><strong>IT Support Clerk (Sept – Oct 2022):</strong> Set up, tested, and troubleshot KIEMS kits, managed voter verification systems, and implemented system security.</p>
             </div>
             <div class="project-card">
                 <h3>Kisii University</h3>
-                <p><strong>ICT Technician Attachment (March – June 2021):</strong> Configured networks, performed hardware/software maintenance, and supported ERP systems.</p>
+                <p><strong>ICT Technician Attachment (March – June 2021):</strong> Configured network systems, performed hardware/software maintenance, and supported ERP systems and computer labs.</p>
             </div>
         </div>
     </section>
@@ -97,14 +106,20 @@
         <h2>Projects, Education & Awards</h2>
         <div class="project-grid">
             <div class="project-card">
+                <div class="terminal-box">
+                    <span class="terminal-title">~/lab_config.sh</span>
+                    <p class="terminal-text">$ sudo systemctl status network-service<br>[OK] Active: running (VLAN & DHCP active)<br>$ ping 192.168.1.1 -c 4<br>4 packets transmitted, 0% packet loss</p>
+                </div>
                 <h3>Computer Lab Setup & Maintenance</h3>
-                <p>Installed and configured operating systems, networks, and hardware. Managed updates, backups, and security protocols.</p>
+                <p>Installed and configured operating systems, networks, and hardware. Managed updates, system patches, backups, and security protocols.</p>
             </div>
             <div class="project-card">
+                <div class="card-icon"></div>
                 <h3>Education</h3>
-                <p><strong>Diploma in ICT:</strong> Serein Educational Center, Nakuru (Graduated with Distinction, Best IT Student of the Year 2022). Also attended Kabete National Polytechnic.</p>
+                <p><strong>Diplomas in ICT:</strong> Serein Educational Center, Nakuru (Graduated with Distinction, Best IT Student 2022) and Kabete National Polytechnic, Nairobi.</p>
             </div>
             <div class="project-card">
+                <div class="card-icon"></div>
                 <h3>Awards & Honors</h3>
                 <p>Best IT Student of the Year (2022), Best in Programming Languages (2022), and Class President at Serein Educational Center.</p>
             </div>
@@ -114,9 +129,12 @@
     <!-- Contact Section -->
     <section id="contact" class="section">
         <h2>Get In Touch</h2>
-        <p>Based in Nairobi, Kenya. Reach out for networking, ICT support, or collaboration opportunities!</p>
-        <a href="mailto:franklinonuonga@gmail.com" class="btn">Email Me</a>
-        <p style="margin-top: 1rem;"><a href="https://linkedin.com/in/franklin-moruri-b51b03324" target="_blank" class="project-link">Connect on LinkedIn &rarr;</a></p>
+        <p>Based in Nairobi, Kenya. Reach out for networking, ICT support, AI data validation, or collaboration opportunities!</p>
+        <div class="contact-actions" style="margin-top: 1.5rem;">
+            <a href="mailto:franklinonuonga@gmail.com" class="btn-primary">Email Me</a>
+            <a href="mailto:franklinonuonga@gmail.com?subject=Requesting%20CV%20-%20Franklin%20Moruri" class="btn-outline">Request CV</a>
+        </div>
+        <p style="margin-top: 1.5rem;"><a href="https://linkedin.com/in/franklin-moruri-b51b03324" target="_blank" class="project-link">Connect on LinkedIn &rarr;</a></p>
     </section>
 
     <!-- Footer -->
