@@ -4,22 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
 
-    // Check if user previously had dark mode enabled
-    if (localStorage.getItem('theme') === 'dark') {
-        body.classList.add('dark-theme');
+    // Default to dark cyber mode, check local storage if user set preference
+    if (localStorage.getItem('theme') === 'light') {
+        body.classList.add('light-theme');
+        themeToggleBtn.textContent = '🌙';
+    } else {
         themeToggleBtn.textContent = '☀️';
     }
 
-    // Toggle dark mode on click
+    // Toggle theme on click
     themeToggleBtn.addEventListener('click', () => {
-        body.classList.toggle('dark-theme');
+        body.classList.toggle('light-theme');
         
-        if (body.classList.contains('dark-theme')) {
-            themeToggleBtn.textContent = '☀️';
-            localStorage.setItem('theme', 'dark');
-        } else {
+        if (body.classList.contains('light-theme')) {
             themeToggleBtn.textContent = '🌙';
             localStorage.setItem('theme', 'light');
+        } else {
+            themeToggleBtn.textContent = '☀️';
+            localStorage.setItem('theme', 'dark');
         }
     });
 });
